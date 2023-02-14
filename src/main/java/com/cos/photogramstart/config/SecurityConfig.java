@@ -23,7 +23,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         http.authorizeRequests().antMatchers("/", "/user/**", "/image/**",
                 "/subscribe/**", "/comment/**")
                 .authenticated().anyRequest().permitAll()
-                .and().formLogin().loginPage("/auth/signin").defaultSuccessUrl("/");
+                .and().formLogin().loginPage("/auth/signin").loginProcessingUrl("/auth/signin").defaultSuccessUrl("/");
 
     }
 }
