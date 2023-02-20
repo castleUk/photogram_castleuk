@@ -5,12 +5,23 @@ server:
     encoding:
       charset: utf-8
       enabled: true
+
+
+
+logging:
+  level:
+    '[shop.mtcoding.demo]': DEBUG
+      
     
 spring:
   mvc:
     view:
       prefix: /WEB-INF/views/
       suffix: .jsp
+      
+  output:
+    ansi:
+      enabled: always
       
   datasource:
     driver-class-name: org.mariadb.jdbc.Driver
