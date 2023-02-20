@@ -19,7 +19,7 @@ pageEncoding="UTF-8"%> <%@ include file="../layout/header.jsp"%>
       <!--프로필셋팅 아이디영역end-->
 
       <!--프로필 수정-->
-      <form id="profileUpdate">
+      <form id="profileUpdate" onsubmit="update(${principal.user.id}, event)">
         <div class="content-item__02">
           <div class="item__title">이름</div>
           <div class="item__input">
@@ -28,7 +28,7 @@ pageEncoding="UTF-8"%> <%@ include file="../layout/header.jsp"%>
               name="name"
               placeholder="이름"
               value="${principal.user.name}"
-            />
+             required="required"/>
           </div>
         </div>
         <div class="content-item__03">
@@ -46,7 +46,7 @@ pageEncoding="UTF-8"%> <%@ include file="../layout/header.jsp"%>
         <div class="content-item__04">
           <div class="item__title">패스워드</div>
           <div class="item__input">
-            <input type="password" name="password" placeholder="패스워드" />
+            <input type="password" name="password" placeholder="패스워드" required="required"/>
           </div>
         </div>
         <div class="content-item__05">
@@ -110,7 +110,7 @@ pageEncoding="UTF-8"%> <%@ include file="../layout/header.jsp"%>
         <div class="content-item__11">
           <div class="item__title"></div>
           <div class="item__input">
-            <button type="button" onclick="update(${principal.user.id},event)">
+            <button>
               제출
             </button>
           </div>
