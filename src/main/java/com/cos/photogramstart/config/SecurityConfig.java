@@ -21,7 +21,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         http.csrf().disable();
         // super 지움 - 기존 시큐리티가 가지고 있는 기능이 비활성화 됨.
         http.authorizeRequests().antMatchers("/", "/user/**", "/image/**",
-                "/subscribe/**", "/comment/**")
+                "/subscribe/**", "/comment/**", "/api/**")
                 .authenticated().anyRequest().permitAll()
                 .and().formLogin().loginPage("/auth/signin").loginProcessingUrl("/auth/signin").defaultSuccessUrl("/");
 

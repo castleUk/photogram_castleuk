@@ -20,6 +20,9 @@ function update(userId, event) {
     })
     .fail((error) => {
       //HttpStatus 상태코드 200번대가 아닐 때
+      if (error.data == null) {
+        alert(error.responseJSON.message);
+      }
       alert(JSON.stringify(error.responseJSON.data));
       console.log("update 실패", error);
     });
