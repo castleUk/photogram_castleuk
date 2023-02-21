@@ -44,6 +44,7 @@ public class UserApiController {
             principalDetails.setUser(userEntity);
 
             return new CMRespDto<>(1, "회원수정완료", userEntity);
+            // 응답시 userEntity의 모든 Getter 함수가 호출되고 JSON으로 파싱하여 응답한다.
 
         }
 
