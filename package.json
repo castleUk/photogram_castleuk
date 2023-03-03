@@ -1,0 +1,22 @@
+{
+  "name": "photogram",
+  "version": "1.0.0",
+  "description": "- 아래 주소로 가서 4.0.6 버전으로 설치해주세요. 아니면 의존성 다운로드 79프로에서 무한루프가 발생합니다.\r - https://github.com/spring-projects/sts4/wiki/Previous-Versions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/castleUk/photogram_castleuk.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/castleUk/photogram_castleuk/issues"
+  },
+  "homepage": "https://github.com/castleUk/photogram_castleuk#readme",
+  "dependencies": {
+    "@types/jquery": "^3.5.16"
+  }
+}
